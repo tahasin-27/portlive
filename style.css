@@ -57,6 +57,18 @@ html, body {
     opacity: 0;
 }
 
+/* For responsive device */
+@media (max-width: 1024px) {
+    .circle {
+        opacity: 0;
+    }
+
+    .visibility {
+        opacity: 0;
+    }
+}
+
+
 #main {
     background-color: #000000;
     /* min-height: 100vh; */
@@ -452,6 +464,10 @@ html, body {
     .product p {
         font-size: 0.6rem;
     }
+
+    .product img {
+        opacity: 0;
+    }
 }
 
 /* For small device responsive */
@@ -466,6 +482,10 @@ html, body {
 
     .product p {
         font-size: 0.7rem;
+    }
+
+    .product img {
+        opacity: 0;
     }
 }
 
@@ -482,6 +502,17 @@ html, body {
     .product p {
         font-size: 0.8rem;
         line-height: 1.7rem;
+    }
+
+    .product img {
+        opacity: 0;
+    }
+}
+
+/* For large device */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product img {
+        opacity: 0;
     }
 }
 
