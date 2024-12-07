@@ -408,7 +408,7 @@ html, body {
     width: 30%;
     border-radius: 8px;
     position: absolute;
-    z-index: 9;
+    z-index: 99;
     opacity: 0;
     transform: translate(-50%);
     cursor: pointer; 
@@ -419,7 +419,7 @@ html, body {
     font-size: 6vw;
     opacity: 0.6;
     mix-blend-mode: difference;
-    z-index: 99;
+    z-index: 9;
 }
 
 .last_product {
