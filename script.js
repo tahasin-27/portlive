@@ -322,16 +322,17 @@ var elem = document.querySelectorAll(".product");
 
 elem.forEach(function(val) {
 
-    val.addEventListener("mouseenter", function() {
+    val.addEventListener("pointerenter", function() {
         console.log("child nodes", val.childNodes[5]);
         val.childNodes[5].style.opacity = 1;
     })
+    
 
-    val.addEventListener("mouseleave", function() {
+    val.addEventListener("pointerleave", function() {
         val.childNodes[5].style.opacity = 0;
     })
 
-    val.addEventListener("mousemove", function(details) {
+    val.addEventListener("pointermove", function(details) {
         val.childNodes[5].style.left = details.x + "px";
         // val.childNodes[3].style.top = details.y + "px";
     })
