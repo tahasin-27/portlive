@@ -464,6 +464,10 @@ html, body {
     .product p {
         font-size: 0.6rem;
     }
+
+    #work a:hover {
+        transition: all ease-in-out 0.2s;
+    }
 }
 
 /* For small device responsive */
@@ -478,6 +482,10 @@ html, body {
 
     .product p {
         font-size: 0.7rem;
+    }
+
+    #work a:hover {
+        transition: all ease-in-out 0.2s;
     }
 }
 
@@ -494,6 +502,10 @@ html, body {
     .product p {
         font-size: 0.8rem;
         line-height: 1.7rem;
+    }
+
+    #work a:hover {
+        transition: all ease-in-out 0.2s;
     }
 }
 
