@@ -464,10 +464,6 @@ html, body {
     .product p {
         font-size: 0.6rem;
     }
-
-    .product img {
-        opacity: 0;
-    }
 }
 
 /* For small device responsive */
@@ -482,10 +478,6 @@ html, body {
 
     .product p {
         font-size: 0.7rem;
-    }
-
-    .product img {
-        opacity: 0;
     }
 }
 
@@ -502,17 +494,6 @@ html, body {
     .product p {
         font-size: 0.8rem;
         line-height: 1.7rem;
-    }
-
-    .product img {
-        opacity: 0;
-    }
-}
-
-/* For large device */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .product img {
-        opacity: 0;
     }
 }
 
