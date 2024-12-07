@@ -452,7 +452,7 @@ html, body {
 }
 
 /* For extra small device responsive */
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     #work a {
         font-size: var(--smResFontSize);
     }
@@ -466,12 +466,12 @@ html, body {
     }
 
     #work a:hover {
-        transition: all ease-in-out 0.2s;
+        transition: all ease-in-out 0s;
     }
 }
 
 /* For small device responsive */
-@media (min-width: 351px) and (max-width: 577px) {
+@media (min-width: 361px) and (max-width: 577px) {
     #work a {
         font-size: var(--resFontSize);
     }
@@ -485,7 +485,7 @@ html, body {
     }
 
     #work a:hover {
-        transition: all ease-in-out 0.2s;
+        transition: all ease-in-out 0s;
     }
 }
 
@@ -505,7 +505,7 @@ html, body {
     }
 
     #work a:hover {
-        transition: all ease-in-out 0.2s;
+        transition: all ease-in-out 0s;
     }
 }
 
@@ -558,7 +558,7 @@ html, body {
 }
 
 /* For extra small device responsive */
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .scroll {
         margin-top: 25vw;
     }
@@ -569,7 +569,7 @@ html, body {
 }
 
 /* For small device */
-@media (min-width: 351px) and (max-width: 577px) {
+@media (min-width: 361px) and (max-width: 577px) {
     .scroll {
         margin-top: 25vw;
     }
@@ -667,7 +667,7 @@ html, body {
 }
 
 /* For extra small device responsive */
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     #about {
         padding-bottom: 5vw;
     }
@@ -708,7 +708,7 @@ html, body {
 
 
 /* For small responsive device */
-@media (min-width: 351px) and (max-width: 577px) {
+@media (min-width: 361px) and (max-width: 577px) {
     #about {
         padding-bottom: 5vw;
     }
@@ -863,7 +863,7 @@ html, body {
 }
 
 /* For extra small device responsive */
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .footer {
         padding-top: 35vw;
         flex-direction: column-reverse;
@@ -902,7 +902,7 @@ html, body {
 }
 
 /* For small device responsive */
-@media (min-width: 351px) and (max-width: 577px) {
+@media (min-width: 361px) and (max-width: 577px) {
     .footer {
         padding-top: 35vw;
         flex-direction: column-reverse;
