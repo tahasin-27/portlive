@@ -1,0 +1,357 @@
+@font-face {
+    font-family: general sans;
+    src: url("GeneralSans-Medium.otf");
+}
+
+@font-face {
+    font-family: general sans;
+    src: url("GeneralSans-Regular.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --navFontSize: 1.2rem;
+    --resnavFontSize: 1.1rem;
+    --fontSize: 1.1rem;
+    --resFontSize: 1rem;
+    --smResFontSize: 0.8rem;
+    --smResNavFontSize: 0.9rem;
+}
+
+body {
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;  
+}
+
+#nav {
+    font-family: general sans;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5vw;
+}
+
+#nav h3 a{
+    font-size: var(--navFontSize);
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.manu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    font-size: var(--navFontSize);
+}
+
+.manu_container h5 a{
+    font-size: var(--navFontSize);
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav h5 a::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #a8d4dc;
+    transform: scaleX(0);
+    transition: transform 350ms ease-in-out;
+  }
+
+#nav h5 a:hover::after {
+    transform: scaleX(1);
+}
+
+/* For extra small device responsive */
+@media (max-width: 360px) {
+    
+    #nav {
+        padding-top: 5vw;
+        padding-bottom: 15vw;
+    }
+
+    #nav h3 a {
+        font-size: var(--smResNavFontSize);
+    }
+
+    .manu_container h5 a {
+        font-size: var(--smResNavFontSize);
+    }
+
+    .head {
+        padding: 7vw 0;
+    }
+
+    .header h1 {
+        font-size: 12vw;
+    }
+}
+
+/* For small device responsive */
+@media (min-width: 361px) and (max-width: 577px) {
+    #nav {
+        padding-top: 5vw;
+        padding-bottom: 15vw;
+    }
+
+    #nav h3 a {
+        font-size: var(--resFontSize);
+    }
+
+    .manu_container h5 a {
+        font-size: var(--resFontSize);
+    }
+
+    .head {
+        padding: 7vw 0;
+    }
+
+    .header h1 {
+        font-size: 12vw;
+    }
+}
+
+/* For medium device responsive */
+@media (min-width: 578px) and (max-width: 768px) {
+    #nav {
+        padding-top: 5vw;
+        padding-bottom: 15vw;
+    }
+
+    #nav h3 a {
+        font-size: var(--navFontSize);
+    }
+
+    .manu_container h5 a {
+        font-size: var(--navFontSize);
+    }
+
+    .head {
+        padding: 7vw 0;
+    }
+
+    .header h1 {
+        font-size: 12vw;
+    }
+}
+
+/* For large device responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #nav {
+        padding-top: 5vw;
+        padding-bottom: 10vw;
+    }
+
+    #nav h3 a {
+        font-size: var(--navFontSize);
+    }
+
+    .manu_container h5 a {
+        font-size: var(--navFontSize);
+    }
+
+    .head {
+        padding: 7vw 0;
+    }
+
+    .header h1 {
+        font-size: 12vw;
+    }
+}
+
+.parent-container {
+
+    font-family: general sans;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-container {
+    width: 40%;
+    /* border: 2px solid white; */
+    padding: 4vw;
+    background-color: #1f1e1e;
+    border-radius: 5px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.contact-container .contact-left-title h2 {
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.6;
+    font-family: general sans;
+}
+
+.contact-left-title hr {
+   opacity: 0.6;
+}
+
+.contact-inputs {
+    /* width: 20rem; */
+    height: 3rem;
+    border: none;
+    outline: none;
+    padding-left: 2vw ;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.contact-left textarea {
+    height: 8rem;
+    padding-top: 1vw;
+}
+
+.contact-inputs:focus {
+    border: 3px solid #a8d4dc;
+}
+
+.contact-inputs::placeholder {
+    color: #000000;
+    opacity: 0.6;
+}
+
+.contact-left button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(250deg, #a2d0d9,#96dde4);
+    cursor: pointer;
+}
+
+.contact-left button:hover {
+    background: #73acb6;
+}
+
+/* For extra small devices */
+@media (max-width: 360px) {
+    .contact-container {
+        width: 90%;
+        padding: 3vw;
+        background-color: #1f1e1e;
+        border-radius: 5px;
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 1.8rem;
+    }
+
+    .contact-container .contact-left-title h2 {
+        text-align: left;
+    }
+}
+
+/* For small device */
+@media (min-width: 361px) and (max-width: 577px) {
+    .contact-container {
+        width: 90%;
+        padding: 3vw;
+        background-color: #1f1e1e;
+        border-radius: 5px;
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 1.8rem;
+    }
+
+    .contact-container .contact-left-title h2 {
+        text-align: left;
+    }
+}
+
+/* For samll large device */
+@media (min-width: 578px) and (max-width: 768px) {
+    .contact-container {
+        width: 70%;
+        padding: 3vw;
+        background-color: #1f1e1e;
+        border-radius: 5px;
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 2.5rem;
+    }
+
+    .contact-container .contact-left-title h2 {
+        text-align: left;
+    }
+}
+
+/* For medium devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-container {
+        width: 60%;
+        padding: 3vw;
+        background-color: #1f1e1e;
+        border-radius: 5px;
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 3rem;
+    }
+
+    .contact-container .contact-left-title h2 {
+        text-align: left;
+    }
+}
+
+/* For large device */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .contact-container {
+        width: 60%;
+        padding: 3vw;
+        background-color: #1f1e1e;
+        border-radius: 5px;
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 3rem;
+    }
+
+    .contact-container .contact-left-title h2 {
+        text-align: left;
+    }
+}

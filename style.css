@@ -74,6 +74,10 @@ html, body {
     /* min-height: 100vh; */
 }
 
+#main ::-webkit-scrollbar {  
+    display: none;  
+}  
+
 /* Nav section starts here */
 #nav {
     color: #fff;
