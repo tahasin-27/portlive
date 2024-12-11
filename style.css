@@ -22,11 +22,14 @@ html {
     --resFontSize: 1rem;
     --smResFontSize: 0.8rem;
     --smResNavFontSize: 0.9rem;
+    --exsmResNavFontSize: 4vw;
+    --exsmResFontSize: 3vw;
 }
 
 html, body {
     width: 100%;
     height: 100%;
+    background-color: #000000;
 }
 
 .circle {
@@ -225,8 +228,71 @@ html, body {
     font-weight: 700;
 }
 
-/* hero section extra small responsive device*/
-@media (max-width: 360px) {
+/* hero section extra small responsive device */
+@media (max-width: 300px) {
+    #hero {
+        padding-bottom: 15vw;
+    }
+
+    #nav {
+        padding-top: 5vw;
+        padding-bottom: 15vw;
+    }
+
+    #heading #product {
+        font-size: 11vw;
+    }
+
+    #heading #design {
+        font-size: 11vw;
+    }
+
+    #heading {
+        padding-bottom: 20vw;
+    }
+
+    #time {
+        padding-bottom: 20vw;
+    }
+    #nav h3 a {
+        font-size: var(--exsmResNavFontSize);
+    }
+
+    .manu_container h5 a {
+        font-size: var(--exsmResNavFontSize);
+    }
+
+
+
+    #design-div #based p {
+        font-size: var(--exsmResFontSize);
+    }
+
+    #design-div {
+        padding-left: 11vw;
+    }
+
+    #time p {
+        font-size: var(--exsmResFontSize);
+    }
+
+    #hero_footer a {
+        font-size: var(--exsmResFontSize);
+    }
+
+    #down_arrow div {
+        height: 15px;
+        width: 15px;
+    }
+
+    #down_arrow div i {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* hero section medium small responsive device*/
+@media (min-width: 301px) and (max-width: 360px) {
     #hero {
         padding-bottom: 15vw;
     }
@@ -455,8 +521,47 @@ html, body {
     opacity: 0.6;
 }
 
+
 /* For extra small device responsive */
 @media (max-width: 360px) {
+    #work a {
+        font-size: var(--smResFontSize);
+    }
+
+    .product h2 {
+        font-size: 10vw;
+    }
+
+    .product p {
+        font-size: 0.6rem;
+    }
+
+    #work a:hover {
+        transition: all ease-in-out 0s;
+    }
+}
+
+/* For small device responsive */
+@media (max-width: 300px) {
+    #work a {
+        font-size: var(--exsmResFontSize);
+    }
+
+    .product h2 {
+        font-size: 6vw;
+    }
+
+    .product p {
+        font-size: 0.4rem;
+    }
+
+    #work a:hover {
+        transition: all ease-in-out 0s;
+    }
+}
+
+/* For extra small device responsive */
+@media (min-width: 301px) and (max-width: 360px) {
     #work a {
         font-size: var(--smResFontSize);
     }
@@ -568,6 +673,17 @@ html, body {
     }
 
     .h5_container h5 {
+        font-size: 6vw;
+    }
+}
+
+/* For extra small device responsive */
+@media (min-width: 301px) and (max-width: 360px) {
+    .scroll {
+        margin-top: 25vw;
+    }
+
+    .h5_container h5 {
         font-size: 10vw;
     }
 }
@@ -670,8 +786,54 @@ html, body {
     font-size: var(--fontSize);
 }
 
+
 /* For extra small device responsive */
-@media (max-width: 360px) {
+@media (max-width: 300px) {
+    #about {
+        padding-bottom: 5vw;
+    }
+
+    #about_container {
+        display: grid;
+    }
+
+    #about_container #me {
+        font-size: var(--exsmResFontSize);
+    }
+    
+    #about_container p {
+        font-size: var(--exsmResNavFontSize);
+        line-height: 1rem;
+    }
+
+    #about {
+        margin-top: 30vw;
+    }
+
+    #about_container {
+        width: 90%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    #about_container img {
+        width: 80px;
+        height: 90px;
+    }
+
+    #subscribe {
+        padding-left: 4vw;
+    }
+
+    #subscribe i {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* For medium small device responsive */
+@media (min-width: 301px) and (max-width: 360px) {
     #about {
         padding-bottom: 5vw;
     }
@@ -866,8 +1028,48 @@ html, body {
     text-transform: uppercase;
 }
 
+
 /* For extra small device responsive */
 @media (max-width: 360px) {
+    .footer {
+        padding-top: 35vw;
+        flex-direction: column-reverse;
+    }
+
+    .footer .link::after {
+        border-bottom: 2px solid #ffffff;
+    }
+
+    #subscribe p {
+        font-size: var(--exsmResFontSize);
+    }
+
+    #subscribe a {
+        font-size: var(--exsmResFontSize);
+    }
+
+    .footer .year {
+        font-size: var(--exsmResFontSize);
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5vw;
+    }
+
+    .footer .link {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5vw;
+        border-bottom: 1px solid #8d8285;
+    }
+
+    .footer .link a {
+        font-size: var(--exsmResFontSize);
+        padding-right: 0;
+    }
+}
+
+/* For extra small device responsive */
+@media (min-width: 301px) and (max-width: 360px) {
     .footer {
         padding-top: 35vw;
         flex-direction: column-reverse;
@@ -942,6 +1144,8 @@ html, body {
         font-size: var(--resFontSize);
         padding-right: 0;
     }
+
+
 
 }
 
