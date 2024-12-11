@@ -32,6 +32,10 @@ html, body {
     background-color: #000000;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .circle {
     z-index: 99;
     height: 12px;
@@ -536,6 +540,10 @@ html, body {
         font-size: 0.6rem;
     }
 
+    #work {
+        margin-top: 8vw;
+    }
+
     #work a:hover {
         transition: all ease-in-out 0s;
     }
@@ -553,6 +561,10 @@ html, body {
 
     .product p {
         font-size: 0.4rem;
+    }
+
+    #work {
+        margin-top: 8vw;
     }
 
     #work a:hover {
@@ -574,6 +586,10 @@ html, body {
         font-size: 0.6rem;
     }
 
+    #work {
+        margin-top: 8vw;
+    }
+
     #work a:hover {
         transition: all ease-in-out 0s;
     }
@@ -592,6 +608,7 @@ html, body {
     .product p {
         font-size: 0.7rem;
     }
+
 
     #work a:hover {
         transition: all ease-in-out 0s;
@@ -982,6 +999,7 @@ html, body {
         margin-left: 0;
     }
 
+
     #subscribe {
         padding-left: 4vw;
     }
@@ -1002,6 +1020,7 @@ html, body {
         width: 220px;
         height: 240px;
     }
+
 }
 
 /* Footer starts here */
